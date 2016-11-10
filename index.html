@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Chue Shee & Mai Boua</title>
+
+    <meta property="og:image" content="http://csvmbv.com/images/front.jpg" />
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!--<link rel="shortcut icon" href="images/favicon.png">-->
+
+    <link href="https://fonts.googleapis.com/css?family=Satisfy|Libre+Baskerville|Roboto:regular,bold,italic,thin,light,bolditalic,black,medium|Raleway:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.grey-orange.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      #tblSchedule tr td {
+        vertical-align: top;
+  font-size: 10pt;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
+      <header class="mdl-layout__header" style="background-color: rgba(0,0,0,.6); color: white;">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Chue Shee & Mai Boua</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" onclick="navShow('welcome')" href="#">Welcome</a>
+            <a class="mdl-navigation__link" onclick="navShow('aboutus')" href="#">About Us</a>
+            <a class="mdl-navigation__link" onclick="navShow('weddingparty')" href="#">Wedding Party</a>
+            <a class="mdl-navigation__link" onclick="navShow('thewedding')" href="#">The Wedding</a>
+            <a class="mdl-navigation__link" onclick="navShow('location')" href="#">Location</a>
+            <!--<a class="mdl-navigation__link" onclick="navShow('musicrequest')" href="#">Music Request</a>-->
+            <a class="mdl-navigation__link" onclick="navShow('photos')" href="#">Photos</a>
+            <a class="mdl-navigation__link" onclick="navShow('rsvp')" href="#">RSVP</a>
+          </nav>
+      	</div>
+      </header>
+      <div class="mdl-layout__drawer" style="background-color: rgba(0,0,0,.6); color: white; border: none; z-index: 9999;"> 
+        <span class="mdl-layout-title"></span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" onclick="navDrawerShow('welcome')" href="#">Welcome</a>
+            <a class="mdl-navigation__link" onclick="navDrawerShow('aboutus')" href="#">About Us</a>
+            <a class="mdl-navigation__link" onclick="navDrawerShow('weddingparty')" href="#">Wedding Party</a>
+            <a class="mdl-navigation__link" onclick="navDrawerShow('thewedding')" href="#">The Wedding</a>
+            <a class="mdl-navigation__link" onclick="navDrawerShow('location')" href="#">Location</a>
+            <!--<a class="mdl-navigation__link" onclick="navDrawerShow('musicrequest')" href="#">Music Request</a>-->
+            <a class="mdl-navigation__link" onclick="navDrawerShow('photos')" href="#">Photos</a>
+            <a class="mdl-navigation__link" onclick="navDrawerShow('rsvp')" href="#">RSVP</a>
+        </nav>
+      </div>
+      
+      <div id="loaderPan" style="width: 100%; height: 1000px; display: block; postion: absolute; background-color: rgba(0,0,0,.5); z-index: 99999;">
+        <div class="mdl-spinner mdl-js-spinner mdl-spinner--single-color is-active" style="display: block; margin-top: 100px;margin-left: auto; margin-right: auto;"></div>
+      </div>
+      
+      <main class="mdl-layout__content">
+         <div class="page-content">
+    
+	        <div id="welcome" class="infoBox">
+	            <h3>Welcome</h3>
+              <br>
+	            <p>
+	              We are so excited and honored to celebrate our wedding with you. We can not thank you enough for all the support, encouragement, love, and memories you have contributed to our lives, separately and together. Please take a look around, mark your calendar, and see you on <strong>Saturday, December 14th</strong>!
+	            </p>
+	        </div>
+    
+	        <div id="aboutus" class="infoBox">
+	            <h3>About Us</h3>
+	            <h4>How They Met</h4>
+              <p>
+                <img src="images/babyus.jpg">
+                <br>
+                Chue Shee and Mai Boua met in the spring of 2003 in Sheboygan, Wi. During their first encounter, very few words were exchanged, but it was enough to spark the romance of a lifetime.
+              </p>
+              <h4>The Proposal</h4>
+              <p>
+                <img src="images/ring.jpg" style="width: 275px;">
+                <img src="images/bigus.jpg" style="width: 275px;">
+                <br>
+                After 12 + years of dating, on a cool spring evening, Chue Shee surprised Mai Boua with her favorite cake (red velvet) little did she know he was planning on asking her to spend the rest of her life with him. He got down on one knee and asked, “Will you marry me?”
+	            </p>
+	        </div>
+	        <div id="weddingparty" class="infoBox">
+	            <h3>Wedding Party</h3>
+
+              <div style="display: table; width: 100%;">
+                <div style="display: table-cell; padding-right: 50px; text-align: right;">
+                  Jean Yang
+                  <br>
+                  <span style="font-size: 10pt;">Matron of Honor</span>
+                </div>
+                <div style="display: table-cell; width: 25%;">
+                  <img src="images/women/jean.png">
+                </div>
+              </div>
+
+              <div style="display: table; width: 100%;">
+                <div style="display: table-cell; width: 25%;">
+                  <img src="images/men/ntaj.png">
+                </div>
+                <div style="display: table-cell; padding-left: 50px; text-align: left;">
+                  Ntaj Vaj
+                  <br>
+                  <span style="font-size: 10pt;">Best Man</span>
+                </div>
+              </div>
+
+              <div style="display: table; width: 100%;">
+                <div style="display: table-cell; padding-right: 50px; text-align: right;">
+                  Lingfei Zhang
+                  <br><span style="font-size: 10pt;">Bridesmaid</span>
+                </div>
+                <div style="display: table-cell; width: 25%;">
+                  <img src="images/women/lingfei.png">
+                </div>
+              </div>
+              
+              <div style="display: table; width: 100%;">
+                <div style="display: table-cell; width: 25%;">
+                  <img src="images/men/xeevxwm.png">
+                </div>
+                <div style="display: table-cell; padding-left: 50px; text-align: left;">
+                  Xeev Xwm Vaj
+                  <br>
+                  <span style="font-size: 10pt;">Best Man</span>
+                </div>
+              </div>
+
+              <div style="display: table; width: 100%;">
+                <div style="display: table-cell; padding-right: 50px; text-align: right;">
+                  See Vue
+                  <br>
+                  <span style="font-size: 10pt;">Bridesmaid</span>
+                </div>
+                <div style="display: table-cell; width: 25%;">
+                  <img src="images/women/see.png">
+                </div>
+              </div>
+              
+              <div style="display: table; width: 100%;">
+                <div style="display: table-cell; width: 25%;">
+                  <img src="images/men/simon.png">
+                </div>
+                <div style="display: table-cell; padding-left: 50px; text-align: left;">
+                  Simon Lee
+                  <br>
+                  <span style="font-size: 10pt;">Groomsman</span>
+                </div>
+              </div>
+
+              <div style="display: table; width: 100%;">
+                <div style="display: table-cell; padding-right: 50px; text-align: right;">
+                  Keo Yang
+                  <br>
+                  <span style="font-size: 10pt;">Bridesmaid</span>
+                </div>
+                <div style="display: table-cell; width: 25%;">
+                  <img src="images/women/keo.png">
+                </div>
+              </div>
+              
+              <div style="display: table; width: 100%;">
+                <div style="display: table-cell; width: 25%;">
+                  <img src="images/men/feng.png">
+                </div>
+                <div style="display: table-cell; padding-left: 50px; text-align: left;">
+                  Feng Yang
+                  <br>
+                  <span style="font-size: 10pt;">Groomsman</span>
+                </div>
+              </div>
+
+              <div style="display: table; width: 100%;">
+                <div style="display: table-cell; padding-right: 50px; text-align: right;">
+                  Anna Ramsey
+                  <br>
+                  <span style="font-size: 10pt;">Bridesmaid</span>
+                </div>
+                <div style="display: table-cell; width: 25%;">
+                  <img src="images/women/anna.png">
+                </div>
+              </div>
+              
+              <div style="display: table; width: 100%;">
+                <div style="display: table-cell; width: 25%;">
+                  <img src="images/men/matt.png">
+                </div>
+                <div style="display: table-cell; padding-left: 50px; text-align: left;">
+                  Matthew Schmidt
+                  <br>
+                  <span style="font-size: 10pt;">Groomsman</span>
+                </div>
+              </div>
+
+              <div style="display: table; width: 100%;">
+                <div style="display: table-cell; padding-right: 50px; text-align: right;">
+                  Youlee Vue
+                  <br>
+                  <span style="font-size: 10pt;">Bridesmaid</span>
+                </div>
+                <div style="display: table-cell; width: 25%;">
+                  <img src="images/women/youlee.png">
+                </div>
+              </div>
+              
+              <div style="display: table; width: 100%;">
+                <div style="display: table-cell; width: 25%;">
+                  <img src="images/men/dan.png">
+                </div>
+                <div style="display: table-cell; padding-left: 50px; text-align: left;">
+                  Dan Yang
+                  <br>
+                  <span style="font-size: 10pt;">Groomsman</span>
+                </div>
+              </div>
+
+              <div style="display: table; width: 100%;">
+                <div style="display: table-cell; padding-right: 50px; text-align: right;">
+                  Maithao Lor
+                  <br>
+                  <span style="font-size: 10pt;">Bridesmaid</span>
+                </div>
+                <div style="display: table-cell; width: 25%;">
+                  <img src="images/women/maithao.png">
+                </div>
+              </div>
+
+
+              <div style="display: table; width: 100%; margin-top: 50px;">
+                <div style="display: table-cell; padding-right: 50px; text-align: right;">
+                  Kouaie Vue
+                  <br>
+                  <span style="font-size: 10pt;">Bridesmaid</span>
+                </div>
+                <div style="display: table-cell; width: 25%;">
+                  <img src="images/women/kouaie.png">
+                </div>
+              </div>
+	        </div>
+	        <div id="thewedding" class="infoBox">
+	            <h3>The Wedding</h3>
+              <h4>Saturday, December 3rd</h4>
+              <h4>Schedule</h4>
+	            <p>
+	              <table id="tblSchedule">
+                  <tr>
+                    <td>3:30 pm</td>
+                    <td>Door Opens</td>
+                  </tr>
+                  <tr>
+                    <td>4:30 pm</td>
+                    <td>Ceremony</td>
+                  </tr>
+                  <tr>
+                    <td>5:15 pm</td>
+                    <td>Cocktail *Cash Only Bar*</td>
+                  </tr>
+                  <tr>
+                    <td>6:30 pm</td>
+                    <td>Dinner</td>
+                  </tr>
+                  <tr>
+                    <td>7:30 pm</td>
+                    <td>Speech</td>
+                  </tr>
+                  <tr>
+                    <td>8:00 pm</td>
+                    <td>Entertainment</td>
+                  </tr>
+	              </table>
+	            </p>
+              
+              <h4>What Do I Wear To This Wedding Affair?</h4>
+              <p>
+                Formal Attire - Wear your finest and dress to impress.
+                <br>
+                Wedding Colors:
+                <br>
+                <div style="display: inline-block; padding-right: 10px; width: 40px; height: 50px; border-radius: 50px; background-color: #5f021a; box-shadow: 0 0 5px #000;"></div>
+                <div style="display: inline-block; padding-right: 10px; width: 40px; height: 50px; border-radius: 50px; background-color: #042e54; box-shadow: 0 0 5px #000;"></div>
+                <div style="display: inline-block; padding-right: 10px; width: 40px; height: 50px; border-radius: 50px; background-color: #f0bfb9; box-shadow: 0 0 5px #000;"></div>
+                <div style="display: inline-block; padding-right: 10px; width: 40px; height: 50px; border-radius: 50px; background-color: #914c51; box-shadow: 0 0 5px #000;"></div>
+                <div style="display: inline-block; padding-right: 10px; width: 40px; height: 50px; border-radius: 50px; background-color: #515f74; box-shadow: 0 0 5px #000;"></div>
+              </p>
+
+              <h4>Where Are We Registered?</h4>
+              <p>
+                <i class="fa fa-amazon" aria-hidden="true"></i> <a href="https://www.amazon.com/wedding/share/csvmbv" target="_blank">Amazon</a> 
+                <br>
+                <i class="fa fa-dot-circle-o" aria-hidden="true"></i> <a href="http://www.target.com/gift-registry/giftgiver?registryId=9nmD8fsZ9PmaL4c0Y64WHA" target="_blank">Target</a>
+              </p>
+
+              <h4>Are My Little One's Invited?</h4>
+              <p>
+                In order to allow all guests, including parents, an enchanting night out.  We have chosen for our wedding celebration to be an adult only occasion. We hope this advance notice means you are still able to share our big day and will enjoy having the night off.
+              </p>
+
+              <h4>Can I Request a Song?</h4>
+              <p>Sure you can!  Enter your favorite artist and song title and click submit.</p>
+              <div>
+	                <input type="text" id="music" placeholder="Artist - Song Title" style="height: 25px; width: 100%; border: none; border-radius: 2px; padding: 5px;">
+	                <div style="margin-top: 5px;">
+	                  <button id="btnSubmitMusic">Submit</button>
+	                </div>
+	            </div>
+
+              <h4>Still Have Questions?</h4>
+              <p>
+                <i class="fa fa-envelope-o fa-2x" aria-hidden="true" style="display: inline-block; width: 50px;"></i>  csvmbv@gmail.com
+                <br>
+                <i class="fa fa-mobile fa-2x" aria-hidden="true" style="display: inline-block; width: 50px;"></i>  920.843.4551
+              </p>
+	        </div>
+	        <div id="location" class="infoBox">
+	            <h3>Location</h3>
+	            <p>
+	              Wedding ceremony and reception is located at the following address:
+                <br><br>
+	              Becket's Atrium<br>
+	              2 Jackson Street<br>
+	              Oshkosh, WI 54901<br>
+	            </p>
+              <h4>Hotel Accommodations</h4>
+	            <p>
+                A block of rooms has been reserved at a special rate of $99.99 for our guests at:
+                <br><br>
+                Best Western Premier Water Hotel and Convention Center<br>
+                1 N Main Street<br>
+                Oshkosh, WI 54901<br>
+                <br>
+                <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>  920.230.1900
+	            </p>
+	        </div>
+
+          <!--
+	        <div id="musicrequest" class="infoBox">
+	            <h3>Music Request</h3>
+	            <p>
+	              Share with us your favorite songs.
+	            </p>
+	            <div>
+	                <input type="text" id="music" placeholder="Artist - Song Title" style="height: 25px; width: 100%; border: none; border-radius: 2px; padding: 5px;">
+	                <div style="margin-top: 5px;">
+	                  <button id="btnSubmitMusic">Submit</button>
+	                </div>
+	            </div>
+	        </div>
+          -->
+
+          <div id="photos" class="infoBox">
+	            <h3>Photos</h3>
+              <br>
+	            <p>
+	              Our beautiful engagement photos taken by Jean Yang.
+                <br>
+                Click on the photos to englarge.
+	            </p>
+              <div style="text-align: center;">
+                  <a href="images/engagement/01.jpg" target="_blank">
+                    <img src="images/engagement/01sm.jpg"/>
+                  </a>
+                  <br><br>
+                  <a href="images/engagement/02.jpg" target="_blank">
+                    <img src="images/engagement/02sm.jpg"/>
+                  </a>
+                  <br><br>
+                  <a href="images/engagement/03.jpg" target="_blank">
+                    <img src="images/engagement/03sm.jpg"/>
+                  </a>
+                  <br><br>
+                  <a href="images/engagement/04.jpg" target="_blank">
+                    <img src="images/engagement/04sm.jpg"/>
+                  </a>
+                  <br><br>
+                  <a href="images/engagement/05.jpg" target="_blank">
+                    <img src="images/engagement/05sm.jpg"/>
+                  </a>
+                  <br><br>
+                  <a href="images/engagement/06.jpg" target="_blank">
+                    <img src="images/engagement/06sm.jpg"/>
+                  </a>
+                  <br><br>
+                  <a href="images/engagement/07.jpg" target="_blank">
+                    <img src="images/engagement/07sm.jpg"/>
+                  </a>
+                  <br><br>
+                  <a href="images/engagement/08.jpg" target="_blank">
+                    <img src="images/engagement/08sm.jpg"/>
+                  </a>
+                  <br><br>
+                  <a href="images/engagement/09.jpg" target="_blank">
+                    <img src="images/engagement/09sm.jpg"/>
+                  </a>
+                  <br><br>
+                  <a href="images/engagement/10.jpg" target="_blank">
+                    <img src="images/engagement/10sm.jpg"/>
+                  </a>
+                  <br><br>
+                  <a href="images/engagement/11.jpg" target="_blank">
+                    <img src="images/engagement/11sm.jpg"/>
+                  </a>
+                  <br><br>
+                  <a href="images/engagement/12.jpg" target="_blank">
+                    <img src="images/engagement/12sm.jpg"/>
+                  </a>
+                  <br><br>
+                  <a href="images/engagement/13.jpg" target="_blank">
+                    <img src="images/engagement/13sm.jpg"/>
+                  </a>
+                  <br><br>
+                  <a href="images/engagement/14.jpg" target="_blank">
+                    <img src="images/engagement/14sm.jpg"/>
+                  </a>
+              </div>
+	        </div>
+
+	        <div id="rsvp" class="infoBox">
+	            <h3>RSVP</h3>
+                <div id="pRSVP">
+                  <p>
+                  Will you be joining us?  Please let us know by November 3rd, 2016.
+                  <br>
+                  Feel free to contact us if there are any changes.
+                  </p>
+                  <div style="float: left; width: 300px; padding-bottom: 25px;">
+                     <div id="btnYesRSVP" style="display: table-cell; cursor: pointer; width: 50%; vertical-align: top;">
+                      <div style="display: table; width: 95%; height: 75px; background-color: rgba(0,0,0,.6); padding: 5px; border-radius: 4px;">
+                        <div style="display: table-cell; width: 20%; text-align: center; vertical-align: middle;border-radius: 4px 0 0 4px;">
+                          <i class="fa fa-thumbs-up fa-3x" aria-hidden="true"></i>
+                        </div>
+
+                        <div style="display: table-cell; width: 75%; padding-left: 10px; vertical-align: middle;">
+                          Yes, can't wait to celebrate with you guys!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="float: left; width: 300px;">
+                    <div id="btnNoRSVP" style="display: table-cell; cursor: pointer; width: 50%; vertical-align: top;">
+
+                      <div style="display: table; width: 95%; height: 75px; background-color: rgba(0,0,0,.6); padding: 5px; border-radius: 4px;">
+                        <div style="display: table-cell; width: 20%; text-align: center; vertical-align: middle;border-radius: 4px 0 0 4px;">
+                          <i class="fa fa-thumbs-down fa-3x" aria-hidden="true"></i>
+                        </div>
+
+                        <div style="display: table-cell; width: 75%; padding-left: 10px; vertical-align: middle;">
+                          Sorry can't make it but wish you well!
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+	            
+	            <div id="divRSVPPeople" style="display: none;">
+                <p>
+                  Submit your name(s) below to RSVP.  Stay awesome and thanks again!
+                  <table style="width: 100%;">
+                    <tr>
+                      <td style="width: 25%;">
+                        <a href="images/food/crabhaddock.jpg" target="_blank">
+                          <img src="images/food/crabhaddock.jpg"  style="width: 100%;">
+                        </a>
+                      </td>
+                      <td style="width: 25%;">
+                        <a href="images/food/shortrib.jpg" target="_blank">
+                          <img src="images/food/shortrib.jpg" style="width: 100%;">
+                        </a>
+                      </td>
+                      <td style="width: 25%;">
+                        <a href="images/food/stuffedchicken.jpg" target="_blank">
+                          <img src="images/food/stuffedchicken.jpg" style="width: 100%;">
+                        </a>
+                      </td>
+                      <td style="width: 25%;">
+                        <a href="images/food/lasagna.jpg" target="_blank">
+                          <img src="images/food/lasagna.jpg" style="width: 100%;">
+                        </a>
+                      </td>
+                    </tr>
+                    <tr style="font-size: 10pt; vertical-align: top; text-align: center;">
+                      <td>Crab Haddock</td>
+                      <td>Beef Short Rib</td>
+                      <td>Stuffed Chicken</td>
+                      <td>Lasagna<br>(Vegetarian)</td>
+                    </tr>
+                  </table>
+                </p>
+                <div style="padding-bottom: 25px;">
+                  <input type="text" id="txtFullName1" class="txtRSVP" placeholder="Full Name">
+                  <button id="foodMenu1" class="mdl-button mdl-js-button mdl-customButton">
+                      <div style="float: left;" id="txtEntree1" class="selEntree">Select an entree</div>
+                      <div style="float: right;">
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                      </div>
+                  </button>
+
+                  <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect "
+                            for="foodMenu1">
+                      <li class="mdl-menu__item">Crab Top Haddock</li>
+                      <li class="mdl-menu__item">Beef Short Rib</li>
+                      <li class="mdl-menu__item">Stuffed Chicken</li>
+                      <li class="mdl-menu__item">Lasagna (Vegetarian)</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <input type="text" id="txtFullName2" class="txtRSVP" placeholder="Full Name">
+                  <button id="foodMenu2" class="mdl-button mdl-js-button mdl-customButton">
+                      <div style="float: left;" id="txtEntree2" class="selEntree">Select an entree</div>
+                      <div style="float: right;">
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                      </div>
+                  </button>
+
+                  <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect "
+                            for="foodMenu2">
+                      <li class="mdl-menu__item">Crab Top Haddock</li>
+                      <li class="mdl-menu__item">Beef Short Rib</li>
+                      <li class="mdl-menu__item">Stuffed Chicken</li>
+                      <li class="mdl-menu__item">Lasagna (Vegetarian)</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <textarea id="txtComments" placeholder="Comments/Questions"></textarea>
+                </div>
+
+                <div style="padding-top: 25px;">
+                  <button id="btnSubmitRSVP">Submit RSVP</button>
+                </div>
+	            </div>
+	        </div>
+
+          <!--
+            <dialog class="mdl-dialog">
+                  <div class="mdl-spinner mdl-js-spinner mdl-spinner--single-color is-active"></div>
+            </dialog>
+            -->
+
+         </div>
+      </main>
+  </div>
+  </body>
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  
+  <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+  <!--
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  -->
+  <script>
+
+    $('document').ready(function(){
+      //var dialog = document.querySelector('dialog');
+      /*
+      if (! dialog.showModal) {
+        dialogPolyfill.registerDialog(dialog);
+      }
+      */
+      $("#loaderPan").hide();
+
+      $(document).ajaxStart(function(){
+        //dialog.showModal();
+        $("#loaderPan").show();
+      });
+
+      $(document).ajaxComplete(function(){
+        //dialog.close();
+        $("#loaderPan").hide();
+      });
+      
+      navShow('welcome');
+      
+
+      $('#btnSubmitMusic').click(function(){
+        submitMusic();
+      });
+
+      $('#btnSubmitRSVP').click(function(){
+
+        var txtFullName1 = $('#txtFullName1').val();
+        var txtEntree1 = ($('#txtEntree1').text() != "Select an entree") ? $('#txtEntree1').text() : "";
+
+        var txtFullName2 = $('#txtFullName2').val();
+        var txtEntree2 = ($('#txtEntree2').text() != "Select an entree") ? $('#txtEntree2').text() : "";
+
+        var txtComments = $('#txtComments').val();
+
+        var data = [];
+
+        if (txtFullName1 && txtEntree1){
+          //submitRSVP(txtFullName1, txtEntree1, "");
+
+          data.push({
+            "entry.606347498": txtFullName1,
+            "entry.564749919": txtEntree1,
+            "entry.30399596": txtComments
+          });
+          if (txtFullName2 && txtEntree2) {
+            //submitRSVP(txtFullName2, txtEntree2, "");
+            data.push({
+              "entry.606347498": txtFullName2,
+              "entry.564749919": txtEntree2,
+              "entry.30399596": txtComments
+            });
+          } 
+
+          submitRSVP(data);
+        } else {
+          alert("Please enter your full name and select an entree before submitting.");
+        }
+
+        
+
+      });
+
+      $('#btnYesRSVP').click(function(){
+        $('#pRSVP').hide();
+        $('#divRSVPPeople').show();
+      });
+
+      $('#btnNoRSVP').click(function(){
+        alert("No hard feelings on our end.  We will miss you!");
+      });
+
+      $('.mdl-menu__item').click(function(){
+        var lblEntree = $(this).parent().parent().parent().find('.selEntree');
+        var lblFullName = $(this).parent().parent().parent().find('.txtRSVP');
+        var selEntree = $(this).text();
+
+        if (lblFullName.val()){
+          lblEntree.text(selEntree);
+        } else {
+          alert("Please enter a full name first before selecting an entree!");
+        }
+      });
+    });
+
+    function navShow(id){
+    	$('.infoBox').hide();
+    	$('#' + id).fadeIn("slow");
+      
+      $('.mdl-layout__content').animate({scrollTop : 0},800);
+    }
+
+
+    function navDrawerShow(id){
+      closeNav();
+      navShow(id);
+    }
+
+    function closeNav() {
+	    var d = document.querySelector('.mdl-layout');
+      d.MaterialLayout.toggleDrawer("aria-hidden");
+    }
+
+    function submitMusic(){
+        var music = $('#music').val();
+
+        var data = {
+          "entry.1249332365": music
+        };
+
+        $.ajax({
+          cache: false,
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSdj6w5MVkcNnaiQpR8geVLofZ40lhkc_0feSpKU1froH-Vorg/formResponse",
+          data: data,
+          dataType: "xml",
+          type: "POST",
+          crossDomain: true
+        })
+        .always(function(xhr, status, error){
+          if (xhr.status == 0 || xhr.status == 200){
+            alert("Thanks!  We will add " + music + " to our list of music!");
+            
+            $('#music').val("");
+          } else {
+            alert("Please try to resubmit!");
+          }
+        });
+		}
+
+    //function submitRSVP(FullName, Entree, Comments){
+    function submitRSVP(objPeople){
+      var submitCount = 0;
+
+        for (var x in objPeople){
+
+            $.ajax({
+              cache: false,
+              url: "https://docs.google.com/forms/d/e/1FAIpQLSc9yRTDxyjNfg_caSgmzGqXXdmlji6WAdUWtkpNuptAiwCCnw/formResponse",
+              data: objPeople[x],
+              dataType: "xml",
+              type: "POST",
+              crossDomain: true,
+              async: false
+            })
+            .always(function(xhr, status, error){
+              if (xhr.status == 0 || xhr.status == 200){
+                alert(objPeople[x]["entry.606347498"] + " has been RSVP'd.  Thank you!");
+                submitCount++;
+
+                if (objPeople.length == submitCount){
+                  navShow('welcome');
+
+                  $('#pRSVP').show();
+                  $('#divRSVPPeople').hide();
+                } 
+              } else {
+                alert("I'm sorry but there has been an error.  Can you try resubmitting?");
+              }
+            });
+            
+
+          
+        }
+		}
+  </script>
+</html>

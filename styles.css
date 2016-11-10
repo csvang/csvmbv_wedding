@@ -1,0 +1,169 @@
+body::before {
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+}
+@media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),
+       (max-width: 512px)  and (min-resolution: 1.5dppx),
+       (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1.5),
+       (max-width: 1024px) and (max-resolution: 1.5dppx) {
+  body::before {
+    background-image: url('images/bg.jpg');
+    background-position:-125px 0px;
+  }
+}
+@media (min-width: 513px)  and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5),
+       (min-width: 513px)  and (max-width: 1024px) and (min-resolution: 1.5dppx),
+       (min-width: 1025px) and (max-width: 2048px) and (-webkit-max-device-pixel-ratio: 1.5),
+       (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
+  body::before {
+    background-image: url('images/bg.jpg');
+  }
+}
+@media (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5),
+       (min-width: 1025px) and (min-resolution: 1.5dppx),
+       (min-width: 2049px) and (-webkit-max-device-pixel-ratio: 1.5),
+       (min-width: 2049px) and (max-resolution: 1.5dppx) {
+  body::before {
+    background-image: url('images/bg.jpg');
+  }
+}
+body {
+  
+  font-family: 'Raleway', sans-serif;
+  font-size: 14pt;
+
+  text-shadow: 0 0 5px #000;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: 14pt;
+  padding:15px 0 0 0; 
+  margin:0;
+}
+
+h3{
+  font-size: 20pt;
+  padding:0; 
+  margin:0;
+}
+
+h3,h4 {
+  font-family: 'Libre Baskerville', serif;
+  text-shadow: 0 0 10px #000;
+  letter-spacing: 2px;
+}
+
+.mdl-layout-title {
+  font-family: 'Satisfy', cursive;
+  font-size: 22pt;
+}
+
+
+/* Fixes for IE 10 */
+.mdl-grid {
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.mdl-navigation__link {
+  color: white !important;
+}
+
+.mdl-navigation__link:hover {
+  color: #AAA !important;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+  background-color: transparent !important;
+}
+
+.mdl-dialog {
+  width: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.infoBox {
+  display: none;
+  background-color: rgba(0,0,0,.6); 
+  color: white; 
+  margin-top: 100px; 
+  padding: 25px; 
+  max-width: 600px; 
+  min-height: 400px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+button {
+  cursor: pointer;
+  background-color: #FFF; 
+  border: 0; 
+  border-radius: 2px; 
+  padding: 15px;
+}
+
+button:hover{
+  background-color: #AAA;
+  color: #000;
+}
+
+.mdl-layout__header .mdl-layout__drawer-button {
+  color: #333;
+  background-color: rgba(255,255,255,.7);
+  border-radius: 4px;
+}
+
+.mdl-customButton {
+  background-color: white !important;
+  margin-top: -7px !important;
+  width: 286px;
+}
+
+.mdl-customButton:hover {
+  background-color: white !important;
+}
+
+.mdl-menu__item {
+  text-shadow:none;
+}
+
+p, address {
+  text-shadow: 0 0 5px #000;
+  letter-spacing: 1px;
+}
+
+/*  RSVP */
+.txtRSVP {
+  height: 25px;
+  min-width: 275px;
+  margin-bottom: 15px;
+}
+
+#txtComments {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 570px;
+  
+  max-height: 125px;
+}
+
+.txtRSVP, #txtComments {
+  padding: 5px;
+  border: 1px solid #333;
+  font-size: 16pt;
+}
+
+.tdMenParty{
+  text-align: left;
+}
